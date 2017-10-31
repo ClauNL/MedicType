@@ -55,10 +55,7 @@ module.exports.routes = {
   'POST /paciente/modificar/:id' : 'PacienteController.Modificar',
   'POST /paciente/eliminar' : 'PacienteController.Eliminar',
   'GET /paciente/update/:id' : 'PacienteController.Update',
-  'POST /paciente/update/:id' : 'PacienteController.Update',
-
-  
-
+  'POST /paciente/update/:id' : 'PacienteController.Update'
 
   
 
