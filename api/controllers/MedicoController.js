@@ -9,12 +9,17 @@ module.exports = {
 	Login: function(req, res) {
 		res.view('login-doctor');
 	},
+	
 	Home: function (req, res) {
 		Medico.findOne({cedula:req.body.cedula}).exec(function (err, doc) {
-			if (err) {res.send(500,{error:'DB_Error'});}
-			res.view('doctor', {doc:doc})
+			if (err) {
+				res.send(500,{error:'DB_Error'});
+			}
+			//console.log(doc);
+			res.view('doctor', {doc:doc});
 		});
 	},
+
 	Consulta: function(req, res) {
 
 	}

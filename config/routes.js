@@ -46,9 +46,24 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
   'GET /login' : 'MedicoController.Login',
-  'POST /Consulta' : 'MedicoController.Home',
-  'POST /pacientes/registro' : 'PacienteController.registrar',
-  'GET /doctor/panel' : 'MedicoController.Atender',
-  'POST /Paciente/crear' : 'PacienteController.crear'
+  'GET /paciente-home' : 'PacienteController.Home',
+
+  'GET /paciente/registrar' : 'PacienteController.Registrar',
+  'POST /paciente/crear' : 'PacienteController.Crear',
+  'POST /paciente/BuscarPorCedula' : 'PacienteController.BuscarPorCedula',
+  'GET /paciente/modificar/:id' : 'PacienteController.Modificar',
+  'POST /paciente/modificar/:id' : 'PacienteController.Modificar',
+  'POST /paciente/eliminar' : 'PacienteController.Eliminar',
+  'GET /paciente/update/:id' : 'PacienteController.Update',
+  'POST /paciente/update/:id' : 'PacienteController.Update',
+
+  
+
+
+  
+
+  //'POST /Consulta' : 'MedicoController.Home',,
+  //'GET /doctor/panel' : 'MedicoController.Atender',
+
   
 };
